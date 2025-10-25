@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <title>index</title>
+    <script type="module" crossorigin src="/2025-Frontend-Layout-project/assets/main-BaZYzb_6.js"></script>
+    <link rel="stylesheet" crossorigin href="/2025-Frontend-Layout-project/assets/main-C9tvTVt_.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary-800">
+  <div class="container d-flex">
+    <!-- 第一區塊 主LOGO -->
+    <div class="order-1 order-lg-1">
+      <a class="navbar-brand ms-1 py-3" href="#">
+        <picture>
+          <source
+            media="(max-width: 567px)"
+            srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMQSURBVHgB7VjhddpADD66QOkEOBOUTMBlAugEpBMwgt0JyAamE6SZwHQCdwObCaATqNJDfv7s+Ljzw5D+8Pee4oskdNKdrNPZmBEjRowYMWIAENGUyTJtYJwpzZUnMmv+J6hjCdORKVZeRE2ILFJZzFQwpRXvwwCOU+W88jN6jwzkMQSWmHtDVzgH5wqQWXLDgl4B/Pxuu6HOFy3H1iBPLwSwBb1NS1bcPAiH84QTU51SXTi2bNFdg6Bu53OQX0qfCnNPsHkfnz6FKtL5ZYs6RCcYfzV+LGBcdsil5MYmEJMQJd3WAlgnnfyPPg/K/ywOeMzJb/7qeKb6Uybbsv84mUxKMwSofjEzpiXTFGTPsP2LAFsr0N8Af6q2CpVtzRCg+mWLHXKsJnPVj3RsgSJ1cg76Lpuxvh9Tn3/eFJJV4ceMt/MH8MSwbL3kvIzfmKTClMYP0bHm/D6tzDldfrP9fWteCa5k/k9zDahZu62mE1aPFOQhwEMvBf5R/7etIK6Dbrtsf+ZwKAW9IDgCQGQ6pzeFQsqoZcpNs0ogqjLqnawHrDlXvaVPMSQASaFLzp3M7fDiUwgJYMiV7Qvv4oQE8GRuu8ouyJzffEohAZRMj0w7cz/sdc7SpxgSwEqOdKbvPH4w50BKkEfyp8exj7tZtsaS85ZtPam9jcdW0EEmRr6wwaTFl4Osah0O6sCr6W74ENILyWLI76uSumf7h5b9hB8589/MNdD67rz6UbMXmilv1kUqw5Y7dsz3QnB3uBpsbKsTFkxral5gMABv3aZmM4f3aDm4EqqbudQEoE87LYcZllRsqXfKk7RYecyJ/i8dW6Zntdsu1w+DtdMCqr8kvDv2QWdDfixBP3PoXN8DOYLomjD0i0SFQa+UfQNwXeqnHqe6gh3kUh98JxZoTsrJXLZEaxjvLpjYw9i2ZKXYHjTvXdDVe6X+aRSBXgH8jAJa58FBjjssdb8rePFJlCfp5j1tbwrdjY0GkgCv6Mptgg/BH7Lql8AOLUg/M1J9i8vAedkx75eLESNGjBgxIhT/AMsSzxlVKdQUAAAAAElFTkSuQmCC"
+          />
+          <img src="data:image/png;base64,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" alt="logo" />
+        </picture>
+      </a>
+    </div>
+    <!-- (A)第二區塊 手機版 漢堡選單 -->
+    <div class="order-3 d-lg-none">
+      <button
+        class="navbar-toggler btn-white"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      </div>
+      <!-- (C)網頁版正常導覽列 -->
+       
+      <div
+        class="d-none d-lg-block order-lg-2 ms-auto"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item">
+            <a
+              class="text-primary-100 nav-link active"
+              aria-current="page"
+              href="#"
+              >產品分類</a
+            >
+          </li>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAYAAAClxaIBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGgSURBVHgB7ZrLbYNAFEUHkwJSQkqIlwg2VOKUkBKSSuJUEomPWJIS0kG8YgOCzESJlY/NBTwz7z2Js8HCs7m6XM6GQAkmz/OHIAgOV0ooZVne9X2/a9s2DZRAdIBbHeCl67ptmqZvGyWMqqpuhmEwAVITwNwT9TiZAKaBMAzvkyR5/b4vpom6rq9NAP1zH0XR88//xIRomuYzQBzHj0oiWZbti6J4UlIxLtAB6rEzrIdtAuiLccF27BzbTRiZ6cvu61V6GDvLUnZ/ZYbOs2vilMwQrDZxTmYINk2MyQzBJsQqM2qmyAxBOuypMkOQbWKOzBAkspsrM4T3JpbIDOF1E0tlhvDWxCUyQ3gLscqMGhsyQzgdti2ZIZxtwqbMEE5kZ1tmCOtNuJAZwuomXMkMYa0JlzJDWAuxyowaHzJDXDRsXzJDLN6ET5khFsnOt8wQs5ugkBli1iaoZIaY3ASlzBCTQ6wyo4aDzBCjw+YiM8TZTXCSGeKk7LjJDPGvCY4yQ/zaBFeZIY5NcJYZ4hhilRk1EmSG2OgRv5uPAZVgPgDMsKXLfHnnKwAAAABJRU5ErkJggg=="
+            alt="interval"
+            class="d-none d-lg-block"
+            width="36"
+            height="36"
+          />
+          <li class="nav-item">
+            <a class="text-primary-100 nav-link" href="#">關於 GLOBE</a>
+          </li>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAYAAAClxaIBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGgSURBVHgB7ZrLbYNAFEUHkwJSQkqIlwg2VOKUkBKSSuJUEomPWJIS0kG8YgOCzESJlY/NBTwz7z2Js8HCs7m6XM6GQAkmz/OHIAgOV0ooZVne9X2/a9s2DZRAdIBbHeCl67ptmqZvGyWMqqpuhmEwAVITwNwT9TiZAKaBMAzvkyR5/b4vpom6rq9NAP1zH0XR88//xIRomuYzQBzHj0oiWZbti6J4UlIxLtAB6rEzrIdtAuiLccF27BzbTRiZ6cvu61V6GDvLUnZ/ZYbOs2vilMwQrDZxTmYINk2MyQzBJsQqM2qmyAxBOuypMkOQbWKOzBAkspsrM4T3JpbIDOF1E0tlhvDWxCUyQ3gLscqMGhsyQzgdti2ZIZxtwqbMEE5kZ1tmCOtNuJAZwuomXMkMYa0JlzJDWAuxyowaHzJDXDRsXzJDLN6ET5khFsnOt8wQs5ugkBli1iaoZIaY3ASlzBCTQ6wyo4aDzBCjw+YiM8TZTXCSGeKk7LjJDPGvCY4yQ/zaBFeZIY5NcJYZ4hhilRk1EmSG2OgRv5uPAZVgPgDMsKXLfHnnKwAAAABJRU5ErkJggg=="
+            alt="interval"
+            class="d-none d-lg-block"
+            width="36"
+            height="36"
+          />
+          <li class="nav-item">
+            <a class="text-primary-100 nav-link" href="#">味蕾旅行特輯</a>
+          </li>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAYAAAClxaIBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGgSURBVHgB7ZrLbYNAFEUHkwJSQkqIlwg2VOKUkBKSSuJUEomPWJIS0kG8YgOCzESJlY/NBTwz7z2Js8HCs7m6XM6GQAkmz/OHIAgOV0ooZVne9X2/a9s2DZRAdIBbHeCl67ptmqZvGyWMqqpuhmEwAVITwNwT9TiZAKaBMAzvkyR5/b4vpom6rq9NAP1zH0XR88//xIRomuYzQBzHj0oiWZbti6J4UlIxLtAB6rEzrIdtAuiLccF27BzbTRiZ6cvu61V6GDvLUnZ/ZYbOs2vilMwQrDZxTmYINk2MyQzBJsQqM2qmyAxBOuypMkOQbWKOzBAkspsrM4T3JpbIDOF1E0tlhvDWxCUyQ3gLscqMGhsyQzgdti2ZIZxtwqbMEE5kZ1tmCOtNuJAZwuomXMkMYa0JlzJDWAuxyowaHzJDXDRsXzJDLN6ET5khFsnOt8wQs5ugkBli1iaoZIaY3ASlzBCTQ6wyo4aDzBCjw+YiM8TZTXCSGeKk7LjJDPGvCY4yQ/zaBFeZIY5NcJYZ4hhilRk1EmSG2OgRv5uPAZVgPgDMsKXLfHnnKwAAAABJRU5ErkJggg=="
+            alt="interval"
+            class="d-none d-lg-block"
+            width="36"
+            height="36"
+          />
+        </ul>
+      </div>
+    
+    <!-- 第三區塊 social icons -->
+    <div class="d-flex order-2 order-lg-3 ms-auto ms-lg-0">
+      <a href="#" class="p-4 me-3"
+        ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEHSURBVHgB1VTRDYJQDOwzDOAIbCIbyAa6gTgBI+AGuoFuIE4gG4ATgBM87/RhEM2DhP54yQX6aMpxpRVr7RWcizJmYAGuRBkBeAE3UH2X6SiMMRQqxtlQgyewkWmIwBzcPiMUP4ORKAB1DmDaBrQiEwWgTgjW34FOcdsNSkU77KwTs3kL0QbVsomigA8r3EGtMYV9KwjaoTKF/cKcwli0QRs07KAVQfcAc97gjLOe4FrJBJgfb6MVS/lLuH87GpHH3sRcDTIieee2XulbUG7PMOfoGh8OFbYdNbUnL23XJAVwU/I+8NTOnVI2uPLk8d/fI/cmrxlIZEBx6BRkQ5+H52uQxd9T+wBZjufFub8xswAAAABJRU5ErkJggg==" alt="cart"
+      /></a>
+      <a href="#" class="p-4 me-3"
+        ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVHgB3VPREYIwDE2ZoCM4ghtQJ8ANdAN1AtjAERzBEcAN3AA3KBvUV0jv0OPScv3j3T1a2pfXhAaiBTjnDNiC1k3w8xOlAMIG7MES1LxW8VoTCz6zUC/sad4zkoFPtRL2x9IkA0dyhj4LKwnsUvrSIcXf/hvcC8FHDB0JApPwEeXrhKAOQg7SM+OaUsDX2XITWZ6XtE2o+Qu3aazWl1Kq+zFA4A7DExxo6oVBMDCg1x9g9BmD+YoulAhor6FfFB4PfyLcbrQCiLuHSc8lrELIPPoHRkxcQZnINlA5JXh8AZVT9aM4x/1NAAAAAElFTkSuQmCC" alt="profile"
+      /></a>
+      <a href="#" class="p-4 d-none d-lg-block"
+        ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEeSURBVHgBvVULFcIwDAwoqIThABQwCyhAAhKYg83BJCABJOAAHGwOyoVdeays3fdx793b2iXXpGkzkQ5Yaw2YgVewsg0qjnMwkR6sOwQLvD50CGbgZgXok2MDugVM3wIqmoCPIQ60LWmfxAwNjc4yAmpPPxMyKDQCmQBmmHd9SHpTigsbFrYVtRbvBN5Qn6dMAPxqPArqtFbUCu9lBuCfqo4/WQ06NnHh93b4k1YWgK+je1wvEbHq+MJ3cCvzsKVOS/gGzioecPSFg+dwKKL3IHh7hgmXQd+vXpHJONEs2ito5FIq+663a6+0V/4U/9OPeaV30hybKxdIXTQUS5mV69dqfwAvXeKh6PPAH+Tsp66iochn42/iK1kYjHj/Av2/bcV45e0OAAAAAElFTkSuQmCC" alt="search"
+      /></a>
+    </div>
+  </div>
+
+   <!-- (B)手機版側邊欄 -->
+      <div
+        class="d-lg-none offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="mb-4">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="您在尋找什麼..."
+              aria-label="Search"
+            />
+          </div>
+
+          <ul class="list-unstyled">
+            <li
+              class="p-3 m-3 border-bottom border-primary-100 d-flex justify-content-between align-items-start"
+            >
+              產品分類
+              <i class="bi bi-chevron-right"></i>
+            </li>
+            <li
+              class="p-3 mb-3 border-bottom border-primary-100 d-flex justify-content-between align-items-start"
+            >
+              關於 GLOBE
+              <i class="bi bi-chevron-right"></i>
+            </li>
+            <li
+              class="p-3 mb-3 border-bottom border-primary-100 d-flex justify-content-between align-items-start"
+            >
+              味蕾旅行特輯
+              <i class="bi bi-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+</nav>
+
+   
+
+    <footer class="bg-primary-50 py-8">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-lg-between mb-lg-4">
+      <!-- 左側主logo -->
+      <div
+        class="d-flex flex-lg-column align-items-lg-start align-items-center"
+      >
+        <a href="#"
+          ><img class="mb-6 mb-lg-4" src="/2025-Frontend-Layout-project/assets/Logo-DizSHm3P.png" alt="LOGO"
+        /></a>
+        <!-- 左側3個並排小logo -->
+        <div class="d-flex">
+          <a href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALiSURBVHgB7VfdUdtAEN6VPIHkBXWA0wEVhAszwTwEpEkDtjtIKsCpIFABpgE4mwyDnRks0wB0EFNB5BfyZ99lT5YGx2NLK1sML/peLJ9X5+/2br9vD6BAgQIFnhQIOcETwoF1cMIvvyCQvh9ADliJoLcnhNZQBdBeNBSTcqJnf6yx9bXrS1gSSxGcENMn9DjQgLL015Jn19f3MzHl8RiEZWlaAJQRsSGv/FPIiMwEvYo40qBdpazaxbden/PO/jtRI6KHGvG0feU3IAMyETzYE03UegN/Yz3rGfM84eifYdaDVqdfh7xBW9ZwK9vnsCLMHAeVN1+48RYniMjV6MxVTeZgReBLrCOg957OMSe+xAkicodaY6PF3NZQctagqjQ41h84nj4OUvoBLbhuT4rsddpcqRn0doWRkEG7y6vAsMLX9HcqpK1FMVTNvpmTk8XUDGoEl7LXBAaMtBj5QRvfykv/LimWtllSFo0E+UlxjDOoScuAJScEYf4wjVwIhBZo8NLCEgkaaaBJHNqSATCgFGxStlmx4ZwYnddlCZKnOjRJLp46HxhYr6yNpAiWzDwnkotknbL3AAu3YFIU0Hsc0WGsWxG1eMS2LXF2+b9PT8erBzWEBKRaHSn/D9u2txb9yYednc34eVRSH81naWQdxWOzTUSMqOJ7ZHuJWsgQapSjsTLVdjzv12kCB7simB1LgIAUiTFIPYOIcIqP/V5uMH2kosWnxaUSjFS/zPVODoy3E8XyRcdvpcWyqpiazdA70zSLRY7miL2dE88iaLJI3ir1i9DgVwL59AkRbHK9na2D7c7NJ2rvh+7u9vkymTTvRP1k0O7efOa+l0moadU1Kpg7ysItnaMq972ow7mlzA2ydtOsfnAaklZPd4x7umM0jCBTlTdpuD/r10bnyMddTY9ErJzlDjONla6d+xXh0hZ4puMBmOs4kog1lyEWI9eLu2VNjF8pNczr4l6gQIECT4x/TqxKY7h7sVoAAAAASUVORK5CYII=" alt="ic_facebook"
+          /></a>
+          <a href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK9SURBVHgB7Ze/btNAHMd/Z5c/EktGBqQ6QkjtFp4g10qQDEV2mNho3wBGpjhvwMgWmNiIkyCUUIlc+gJkhAHVeQLCRKmU+/E7J5FQaHxnX2DyR4rs2Hfnr3//7meAgoKCgn8KgxwEnJfgJpSyzIkGIoYcZBIY1DlHhCYAVujvDLLh0ePEnEHr/UAI00nGAoMaf4mAPiILnUvoRkJkEqisPr8GgeNgExl70xuI0GSekUCyXIgSfXbJDrIK+2utgJfwJ47oZUVvePZcN14rcOFWbLNf7L6tuDWRn+eMnejc7YAGFXPKrdaWq3MvSS4iisRMStZyEZu6eVqBJJGrmAMLlDjywkjegKera+4tiAChshK9CWaycHc4LoNeBJcSqupcOjA2yVS/xs9d1+HvPnyabhqzA5asYpR+Mb3vhC7NlOv8WrVtEmM6rAQuxXWkdIL+6Wj8x63Woxr3SWjnqM4bNiINYnAzynIS2PGauIT+UHQZYw0S2QYLcgtU1qNDrIRsGhMtLBcfLcbmIrdAlRBUfoRuHFJcOsvkyYOViwl9w4BgVT9zC3SolDCWNA2pMAbcxNIbnwM5WcaXlxZfwUMekAm9q5LIFCsXU5aeuBI7DSop6/eSEsQoy6VzDBZY1UFlRRLSkFRKaFd4Rvu2oMslcmuFSpB3RX38vwJXIulQbjw4qM4ZcjpXjUDYPxVWwlak78WLtuicWq3ytlqttbW/0z6fqiE1BlVbRIcJfX/4sG0ugBIoCYlUtElCidCieAp1bVEW1Fq0ZpNiNNSN1QpUMUbteYTXcbQNkYk4WosEvjZJIBcM+PptOty/u3sbd+DV/r3ybO+ON/0SxxeQASVsb897gi6+pRce9D6evTCZl+mzU2WqdGRIp5ymxpAJVNafKLdmKT25PtwVjw8Pd7OMl1L+2HYlKCgoKNgCvwHC4FfI9qstPgAAAABJRU5ErkJggg==" alt="ic_instagram"
+          /></a>
+          <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOrSURBVHgB7VhNTttQEJ55AQHqomHXHaFqKd2FC4CpxI9QCaEXgJyg5AQJJyDsuiM5AQ6pKlIWODlBumulVjUnaHYUSN50xiaRk9rE+UFqpXySZfLem3mfZ+bNzANgjDHG+L+BMASSa0YcFKxoghgrirG2qDNBUCcAWyHYoKFiXlg1GBB9E0waRhSm4YCI9vinTYCmkJm8U20SOqJnEfBpU1EcgQyQD1BY5Km8eW7Z0AdCE2wT07RDiHl1AwXTsuphZZuTkFSKMixbUL8hF1Y2FMHkphFji50SUP6sXD2GIZBcXxaS+4i4GsaaPQkmt4w4NegEJzBlfho8ljp0ygdrOkVinT3iE0MpUrjbb+z0Qljd6iEl7NbLxyAnEJ2sOy0kH1oXCZrgL9yXd7FcKcAj4et32371Ym7x9cv5Z/z3F781E0HCbL2MBLJ3TNwCTYh648bJhRFwTmSDc+HHc8vyroU7sBvTEG9v2IS6V17NqEO6dqzoawhfFzvKObd1u5YIMqToqGNMwanWsCdzEQ6Jt5uG4V0r6UXGWw+PvffKm6abbt5tvZnz4+JvQQ1xTsAWDAAmccJ5b4m6xpVWhkM8QlfdMrxXrdHQMl8IRbBJEEUFoRJp1051KXc0JVbuTBBaUdZdAhV+Zb1z7EZbB6iceGCzKPQLhLoGPFYgBEk+0JPjyHaZ4s9uMe3uVQ9NkI92jZBWwB+x7fsTzuss6vJlqWzldjZWRDbZQQKx4sgg/OViRIhr7R9S/hZ8wl3INRgQQFBxnDmbkpQszwy5VsAZTPHJjHuFWjL8PXl+WR0aiWKlC6vit5nvKZaTJV1K60S2gDeQjtxFYq1H3UKRx5b4fSxzeOumJZHHG1ziZ5c3zntleCzt1enkW4TAchdY6tqliDcN23n0C+ly+EBdcr4NrFaBpU4EOG4Kekpn4JFAU3AkHdJQpTSxbuQTm0YWRgz2UDbBrVevdaH6wcTG8hF3yFF2xeEoGgchx6V0jut8qtfaCITAtx9X5YXn87OIlOHCDkGFvScxjrmFxdgH0vrX2edqOoxMX3cSt7MGdgvF+Kfd5BhtNQfhZLkWA+X66coHvtVtrxn7im90TDYuyU1ShaQQvxOf3DCcS9YgXflQ104vJE45KdhnZattnXuLnxDpmrpVh4OkqwkYERST8xZ8x2qa9jSpg9JFtQIDYmQEmRwndjTZaobEqXattlqyLodK8qOzoPw3AXWOydU5HaWK5aoNY4wxxhj/Pv4AitXe1xSskc0AAAAASUVORK5CYII=" alt="ic_line" /></a>
+        </div>
+      </div>
+      <!-- 右側navbar -->
+      <ul
+        class="navbar d-flex flex-column align-items-start flex-lg-row align-items-lg-center"
+      >
+        <li class="mb-6 mb-lg-0 me-lg-6"><a href="#">商品資訊</a></li>
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAYAAAClxaIBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGgSURBVHgB7ZrLbYNAFEUHkwJSQkqIlwg2VOKUkBKSSuJUEomPWJIS0kG8YgOCzESJlY/NBTwz7z2Js8HCs7m6XM6GQAkmz/OHIAgOV0ooZVne9X2/a9s2DZRAdIBbHeCl67ptmqZvGyWMqqpuhmEwAVITwNwT9TiZAKaBMAzvkyR5/b4vpom6rq9NAP1zH0XR88//xIRomuYzQBzHj0oiWZbti6J4UlIxLtAB6rEzrIdtAuiLccF27BzbTRiZ6cvu61V6GDvLUnZ/ZYbOs2vilMwQrDZxTmYINk2MyQzBJsQqM2qmyAxBOuypMkOQbWKOzBAkspsrM4T3JpbIDOF1E0tlhvDWxCUyQ3gLscqMGhsyQzgdti2ZIZxtwqbMEE5kZ1tmCOtNuJAZwuomXMkMYa0JlzJDWAuxyowaHzJDXDRsXzJDLN6ET5khFsnOt8wQs5ugkBli1iaoZIaY3ASlzBCTQ6wyo4aDzBCjw+YiM8TZTXCSGeKk7LjJDPGvCY4yQ/zaBFeZIY5NcJYZ4hhilRk1EmSG2OgRv5uPAZVgPgDMsKXLfHnnKwAAAABJRU5ErkJggg=="
+          alt="interval"
+          class="d-none d-lg-block"
+        />
+        <li class="mb-6 mb-lg-0 mx-lg-8"><a href="">關於 GLOBE</a></li>
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAYAAAClxaIBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGgSURBVHgB7ZrLbYNAFEUHkwJSQkqIlwg2VOKUkBKSSuJUEomPWJIS0kG8YgOCzESJlY/NBTwz7z2Js8HCs7m6XM6GQAkmz/OHIAgOV0ooZVne9X2/a9s2DZRAdIBbHeCl67ptmqZvGyWMqqpuhmEwAVITwNwT9TiZAKaBMAzvkyR5/b4vpom6rq9NAP1zH0XR88//xIRomuYzQBzHj0oiWZbti6J4UlIxLtAB6rEzrIdtAuiLccF27BzbTRiZ6cvu61V6GDvLUnZ/ZYbOs2vilMwQrDZxTmYINk2MyQzBJsQqM2qmyAxBOuypMkOQbWKOzBAkspsrM4T3JpbIDOF1E0tlhvDWxCUyQ3gLscqMGhsyQzgdti2ZIZxtwqbMEE5kZ1tmCOtNuJAZwuomXMkMYa0JlzJDWAuxyowaHzJDXDRsXzJDLN6ET5khFsnOt8wQs5ugkBli1iaoZIaY3ASlzBCTQ6wyo4aDzBCjw+YiM8TZTXCSGeKk7LjJDPGvCY4yQ/zaBFeZIY5NcJYZ4hhilRk1EmSG2OgRv5uPAZVgPgDMsKXLfHnnKwAAAABJRU5ErkJggg=="
+          alt="interval"
+          class="d-none d-lg-block"
+        />
+        <li class="ms-lg-6"><a href="">味蕾旅行特輯</a></li>
+      </ul>
+    </div>
+    <!-- 公司地址資訊欄 -->
+    <div class="footer-address pt-3 mb-3">
+      <p class="mb-2">100 台北市中正區重慶南路一段 122 號</p>
+      <p class="mb-2">GLOBE 味蕾家股份有限公司</p>
+      <p>統一編號：77776666</p>
+    </div>
+    <p class="pt-3 border-top border-primary-200">
+      © Copyright 2024 TTH. All Rights Reserved
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
