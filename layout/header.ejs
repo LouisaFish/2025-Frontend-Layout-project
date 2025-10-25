@@ -1,0 +1,138 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary-800">
+  <div class="container d-flex">
+    <!-- 第一區塊 主LOGO -->
+    <div class="order-1 order-lg-1">
+      <a class="navbar-brand ms-1 py-3" href="#">
+        <picture>
+          <source
+            media="(max-width: 567px)"
+            srcset="/assets/images/mobile-logo.png"
+          />
+          <img src="/assets/images/Header-logo.png" alt="logo" />
+        </picture>
+      </a>
+    </div>
+    <!-- (A)第二區塊 手機版 漢堡選單 -->
+    <div class="order-3 d-lg-none">
+      <button
+        class="navbar-toggler btn-white"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      </div>
+      <!-- (C)網頁版正常導覽列 -->
+       
+      <div
+        class="d-none d-lg-block order-lg-2 ms-auto"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item">
+            <a
+              class="text-primary-100 nav-link active"
+              aria-current="page"
+              href="#"
+              >產品分類</a
+            >
+          </li>
+          <img
+            src="/assets/images/Vector 5.png"
+            alt="interval"
+            class="d-none d-lg-block"
+            width="36"
+            height="36"
+          />
+          <li class="nav-item">
+            <a class="text-primary-100 nav-link" href="#">關於 GLOBE</a>
+          </li>
+          <img
+            src="/assets/images/Vector 5.png"
+            alt="interval"
+            class="d-none d-lg-block"
+            width="36"
+            height="36"
+          />
+          <li class="nav-item">
+            <a class="text-primary-100 nav-link" href="#">味蕾旅行特輯</a>
+          </li>
+          <img
+            src="/assets/images/Vector 5.png"
+            alt="interval"
+            class="d-none d-lg-block"
+            width="36"
+            height="36"
+          />
+        </ul>
+      </div>
+    
+    <!-- 第三區塊 social icons -->
+    <div class="d-flex order-2 order-lg-3 ms-auto ms-lg-0">
+      <a href="#" class="p-4 me-3"
+        ><img src="/assets/images/icon 1.png" alt="cart"
+      /></a>
+      <a href="#" class="p-4 me-3"
+        ><img src="/assets/images/icon 2.png" alt="profile"
+      /></a>
+      <a href="#" class="p-4 d-none d-lg-block"
+        ><img src="/assets/images/icon 3.png" alt="search"
+      /></a>
+    </div>
+  </div>
+
+   <!-- (B)手機版側邊欄 -->
+      <div
+        class="d-lg-none offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="mb-4">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="您在尋找什麼..."
+              aria-label="Search"
+            />
+          </div>
+
+          <ul class="list-unstyled">
+            <li
+              class="p-3 m-3 border-bottom border-primary-100 d-flex justify-content-between align-items-start"
+            >
+              產品分類
+              <i class="bi bi-chevron-right"></i>
+            </li>
+            <li
+              class="p-3 mb-3 border-bottom border-primary-100 d-flex justify-content-between align-items-start"
+            >
+              關於 GLOBE
+              <i class="bi bi-chevron-right"></i>
+            </li>
+            <li
+              class="p-3 mb-3 border-bottom border-primary-100 d-flex justify-content-between align-items-start"
+            >
+              味蕾旅行特輯
+              <i class="bi bi-chevron-right"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+</nav>

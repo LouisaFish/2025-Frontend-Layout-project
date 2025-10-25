@@ -1,0 +1,25 @@
+// .footer{
+//   margin: auto 0;
+// }
+// .footer-logo {
+//   width: 260px;
+//   height: 68px;
+// }
+// .social-logo {
+//   display: block;
+// }
+
+// .social-logo img {
+//   width: 40px;
+//   height: 40px;
+// }
+
+
+.navbar {
+  list-style: none;
+}
+@media (max-width: 576px) {
+  .footer-address {
+    border-top: 1px $primary-200 solid;
+  }
+}
