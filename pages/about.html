@@ -4,11 +4,132 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>about</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+    <div class="about-banner"></div>
+
+    <!-- 區塊: 品牌年表 -->
+    <div class="container">
+      <div class="py-lg-10 py-12">
+        <!-- 標題: 品牌年表 -->
+        <div
+          class="title-sideline d-flex align-items-center justify-content-center mb-lg-9 mb-5 py-lg-5 py-3 text-center"
+        >
+          <h2 class="fs-4 fs-lg-2 px-5 px-lg-7">品牌年表</h2>
+        </div>
+
+        <ul class="timeline">
+          <li
+            class="time-line-list d-lg-flex row justify-content-center mb-lg-14"
+          >
+            <div class="fs-lg-3 fs-6 mb-2 col-lg-1">2004</div>
+            <div class="circle-list col-lg-1 px-lg-7 d-none d-lg-block"></div>
+            <div class="timeline-content fs-lg-6 font-size-sm col-lg-7">
+              <p>
+                在台北板橋成立 GLOBE 味蕾家，專注於異國進口食品電商，<br
+                  class="d-none d-lg-block"
+                />
+                首波商品上架，涵蓋韓國、泰國、日本、義大利、西班牙等六大地區特色美食
+              </p>
+            </div>
+          </li>
+
+          <li
+            class="time-line-list d-lg-flex row justify-content-center mb-lg-14"
+          >
+            <div class="fs-lg-3 fs-6 mb-2 col-lg-1">2008</div>
+            <div class="circle-list col-lg-1 px-lg-7 d-none d-lg-block"></div>
+            <div class="timeline-content fs-lg-6 font-size-sm col-lg-7">
+              <p>
+                推出「味蕾旅行箱」系列組合，打造跨國風味的訂閱體驗
+                <br class="d-none d-lg-block" />
+                開設官方社群平台，分享各國飲食文化與料理靈感
+              </p>
+            </div>
+          </li>
+
+          <li
+            class="time-line-list d-lg-flex row justify-content-center mb-lg-14"
+          >
+            <div class="fs-lg-3 fs-6 mb-2 col-lg-1">2010</div>
+            <div class="circle-list col-lg-1 px-lg-7 d-none d-lg-block"></div>
+            <div class="timeline-content fs-lg-6 font-size-sm col-lg-7">
+              <p>
+                擴大選品，加入蔬食友善與動物保護理念，推廣植物性飲食<br
+                  class="d-none d-lg-block"
+                />
+                與非營利組織合作，推動飲食教育與永續消費
+              </p>
+            </div>
+          </li>
+
+          <li
+            class="time-line-list d-lg-flex row justify-content-center mb-lg-14"
+          >
+            <div class="fs-lg-3 fs-6 mb-2 col-lg-1">2018</div>
+            <div class="circle-list col-lg-1 px-lg-7 d-none d-lg-block"></div>
+            <div class="align-self-lg-center fs-lg-6 font-size-sm col-lg-7">
+              <p>
+                榮獲「綠色電商創新獎」，肯定我們在永續包裝與碳足跡管理的努力
+              </p>
+            </div>
+          </li>
+
+          <li
+            class="time-line-list d-lg-flex row justify-content-center mb-lg-14"
+          >
+            <div class="fs-lg-3 fs-6 mb-2 col-lg-1">2024</div>
+            <div
+              class="circle-list col-lg-1 px-lg-7 d-none d-lg-block arrow"
+            ></div>
+            <div class="align-self-lg-center fs-lg-6 font-size-sm col-lg-7">
+              <p>計畫開設實體快閃店，讓消費者親身體驗異國美味</p>
+            </div>
+          </li>
+          <!-- 最後一個: Now -->
+          <li
+            class="time-line-list d-lg-flex row justify-content-center text-warning-dark"
+          >
+            <div class="fs-lg-3 fs-6 mb-2 me-lg-10 col-lg-1">Now</div>
+
+            <div class="align-self-lg-center fs-lg-6 font-size-sm col-lg-7">
+              <p>
+                GLOBE 味蕾家持續拓展選品版圖，讓世界的美味走進更多人的日常生活
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 區塊: 品牌故事 -->
+    <div class="py-lg-10 py-12 bg-primary-50">
+      <div class="container">
+        <!-- 標題: 品牌故事 -->
+        <div
+          class="title-sideline d-flex align-items-center justify-content-center mb-lg-9 mb-5 py-lg-5 py-3 text-center"
+        >
+          <h2 class="fs-4 fs-lg-2 px-5 px-lg-7">品牌故事</h2>
+        </div>
+      </div>
+    </div>
+    <div class="py-lg-10 py-12">
+      <div class="container">
+        <!-- 標題: 社會責任 -->
+        <div
+          class="title-sideline d-flex align-items-center justify-content-center mb-lg-9 mb-5 py-lg-5 py-3 text-center"
+        >
+          <h2 class="fs-4 fs-lg-2 px-5 px-lg-7">社會責任</h2>
+        </div>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

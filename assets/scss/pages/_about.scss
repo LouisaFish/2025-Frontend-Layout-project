@@ -1,0 +1,145 @@
+.about-banner {
+  height: 501px;
+  background-image: url("/assets/images/Header pic.png");
+  background-repeat: no-repeat;
+  background-color: #4f473f;
+  background-position: center;
+  background-size: cover;
+}
+
+/* 2. 設置橫線的偽元素 */
+.title-sideline::before,
+.title-sideline::after {
+  content: ""; /* 偽元素必須有 content 屬性 */
+  flex-grow: 0.08; /* 1 關鍵！讓橫線佔據所有剩餘空間 */
+  height: 1px; /* 橫線的粗細 */
+  background-color: $primary-800; /* 橫線的顏色 (請根據您的設計圖調整) */
+}
+
+/* 3. 調整標題與橫線的間距 */
+.title-sideline h2 {
+  /* 確保標題本身不會被壓縮，並設置左右間隔 */
+  flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  .about-banner {
+    height: 225px;
+    background-image: url("/assets/images/Header pic-mobile.png");
+    background-repeat: no-repeat;
+    background-color: #4f473f;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.time-line-list {
+  position: relative; /* 讓偽元素可以相對於 li 定位 */
+}
+
+// 網頁版
+.circle-list {
+  position: relative; /* 讓偽元素可以相對於 li 定位 */
+}
+/* 3. 繪製圓圈 (替代表頭) - 使用 ::before */
+.circle-list::before {
+  content: "";
+  position: absolute;
+  /* 調整位置，讓圓圈中心對齊 li 內容的垂直中心 */
+  left: 15px;
+  top: 0; /* 這裡需要微調，讓圓圈與 li 內容對齊 */
+
+  /* 圓圈的尺寸和樣式 */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid $secondary; /* 空心圓圈邊框 */
+  background-color: white; /* 圓圈內部顏色 */
+  z-index: 2; /* 確保圓圈在線上層 */
+}
+
+/* 4. 繪製直線 (連線) - 使用 ::after */
+.circle-list::after {
+  content: "";
+  position: absolute;
+  left: 45px; /* 調整直線位置，與圓圈中心對齊 (15px + 60px/2 - 1px/2) */
+  top: 61px; /* 從圓圈底部開始 (60px 高度 + 0px top + 1px border) */
+  bottom: -60px; /* 讓線延伸到 li 底部 (負值才能到達下一個 li 的圓圈) */
+  width: 1px;
+  background-color: $secondary;
+  z-index: 1;
+}
+
+//手機版
+@media (max-width: 576px) {
+  // 品牌列表
+  /* 1. 列表項目設定 */
+  .time-line-list {
+    position: relative; /* 讓偽元素可以相對於 li 定位 */
+    padding-left: 70px; /* 為圓圈和線條留出左側空間 */
+    margin-bottom: 50px; /* 項目間隔 */
+  }
+
+  /* 2. 繪製圓圈 (替代表頭) - 使用 ::before */
+  .time-line-list::before {
+    content: "";
+    position: absolute;
+    /* 調整位置，讓圓圈中心對齊 li 內容的垂直中心 */
+    left: 0;
+    top: 0; /* 這裡需要微調，讓圓圈與 li 內容對齊 */
+
+    /* 圓圈的尺寸和樣式 */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $secondary; /* 空心圓圈邊框 */
+    background-color: white; /* 圓圈內部顏色 */
+    z-index: 2; /* 確保圓圈在線上層 */
+  }
+
+  /* 3. 繪製直線 (連線) - 使用 ::after */
+  .time-line-list::after {
+    content: "";
+    position: absolute;
+    left: 20px; /* 調整直線位置，與圓圈中心對齊 (0px + 40px/2 - 1px/2) */
+    top: 41px; /* 從圓圈底部開始 (40px 高度 + 0px top + 1px border) */
+    bottom: -50px; /* 讓線延伸到 li 底部 (負值才能到達下一個 li 的圓圈) */
+    width: 1px;
+    background-color: $secondary;
+    z-index: 1;
+  }
+}
+
+//最後一個li改箭頭
+.arrow {
+  position: relative; /* 讓偽元素可以相對於 li 定位 */
+}
+/* 3. 繪製圓圈 (替代表頭) - 使用 ::before */
+.arrow::before {
+  content: "";
+  position: absolute;
+  /* 調整位置，讓圓圈中心對齊 li 內容的垂直中心 */
+  left: 15px;
+  top: 0; /* 這裡需要微調，讓圓圈與 li 內容對齊 */
+
+  /* 圓圈的尺寸和樣式 */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid $secondary; /* 空心圓圈邊框 */
+  background-color: white; /* 圓圈內部顏色 */
+  z-index: 2; /* 確保圓圈在線上層 */
+}
+
+/* 4. 繪製直線 (連線) - 使用 ::after */
+.arrow::after {
+  content: "";
+  position: absolute;
+  left: 45px; /* 調整直線位置，與圓圈中心對齊 (15px + 60px/2 - 1px/2) */
+  top: 61px; /* 從圓圈底部開始 (60px 高度 + 0px top + 1px border) */
+  bottom: -120px; /* 讓線延伸到 li 底部 (負值才能到達下一個 li 的圓圈) */
+  width: 1px;
+  background-color: $secondary;
+  /* 2. 繪製箭頭 (朝下) */
+  
+}

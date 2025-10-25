@@ -14,10 +14,25 @@
 //   height: 40px;
 // }
 
-
 .navbar {
   list-style: none;
 }
+// Gemini建議
+// /* 針對 Social Icons 的父容器 */
+// .social-icons {
+//   display: flex; /* 您已設定 d-flex，這是對的 */
+//   /* 消除內聯元素間距的技巧 */
+//   font-size: 0;
+// }
+
+// /* 確保裡面的 a 標籤內容文字大小恢復 */
+// .social-icons a {
+//   font-size: 0; /* 或是您需要的文字大小 */
+//   /* 這裡也可以加上 display: block/flex 來取代 inline-block */
+//   display: flex;
+//   align-items: center; /* 如果 a 裡面有文字或 icon，確保垂直置中 */
+// }
+
 @media (max-width: 576px) {
   .footer-address {
     border-top: 1px $primary-200 solid;
