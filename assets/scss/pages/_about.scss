@@ -141,5 +141,13 @@
   width: 1px;
   background-color: $secondary;
   /* 2. 繪製箭頭 (朝下) */
-  
+}
+
+@media (max-width: 576px) {
+  .story-title {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
 }
